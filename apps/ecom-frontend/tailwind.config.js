@@ -4,7 +4,7 @@ const { join } = require('path');
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    join(__dirname, 'src/**/!(*.stories|*.spec).{ts,html,js}'),
+    join(__dirname, 'src/**/!(*.stories|*.spec).{ts,html}'),
     ...createGlobPatternsForDependencies(__dirname),
   ],
   theme: {
@@ -21,7 +21,7 @@ module.exports = {
           '4xl': '2.441rem',
           '5xl': '3.052rem',
 
-    }
+    },
     extend: {},
   },
     daisyui: {
@@ -40,7 +40,7 @@ module.exports = {
       utils: true,
       prefix: '',
       logs: true,
-      themeRoot: ':root'
+      themeRoot: ':root',
     },
   plugins: [
    require('@tailwindcss/typography'),
