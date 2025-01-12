@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
   this.initFontAwesome()
 }
  private initFontAwesome() {
-    this.faConfig.defaultPrefix =  'far';
+    this.faConfig.defaultPrefix =  'fas';
     this.faIconLibrary.addIcons(...fontAwesomeIcons);
   }
 }
