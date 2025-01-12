@@ -1,6 +1,7 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FaConfig, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { fontAwesomeIcons } from './shared/font-awesome-icons';
 
 
 @Component({
@@ -19,6 +20,7 @@ export class AppComponent implements OnInit {
   this.initFontAwesome()
 }
  private initFontAwesome() {
-    this.faConfig.defaultPrefix =  'far'
+    this.faConfig.defaultPrefix =  'far';
+    this.faIconLibrary.addIcons(...fontAwesomeIcons);
   }
 }
