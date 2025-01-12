@@ -7,7 +7,7 @@ import { fontAwesomeIcons } from './shared/font-awesome-icons';
 @Component({
   standalone: true,
   imports: [ RouterModule],
-  selector: 'app-root',
+  selector: 'ecom-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
