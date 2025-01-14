@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'ecom-navbar',
   imports: [CommonModule],
-  templateUrl: './layout.component.html',
-  styleUrl: './layout.component.css',
+  templateUrl: './navbar.component.html',
+  styleUrl: './navbar.component.scss',
 })
 export class NavbarComponent {}
